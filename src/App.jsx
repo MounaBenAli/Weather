@@ -1,17 +1,14 @@
-import './App.css'
-import Header from './components/Home/Header.jsx'
-import WeatherInfo from './components/Home/WeatherInfo.jsx';
+import "./App.css";
+import WeatherForcast from "./components/WeatherForcast.jsx";
+
 function App() {
-
-
   return (
     <>
       <div className="App">
-        <Header />
+        <WeatherForcast />
       </div>
-   
     </>
-  )
+  );
 }
 
-export default App
+export default App;
