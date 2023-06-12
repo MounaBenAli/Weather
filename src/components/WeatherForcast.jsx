@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 
 export default function WeatherForcast() {
   const [background, setBackground] = useState(cold);
-  const [city, setCity] = useState(localStorage.getItem("city") || "Tunis"); // Use localStorage to get the city value, or use a default value
+  const [city, setCity] = useState(localStorage.getItem("city") || "London"); // Use localStorage to get the city value, or use a default value
   const [weather, setWeather] = useState(null);
   const [units, setUnits] = useState("metric");
 
@@ -59,7 +59,7 @@ export default function WeatherForcast() {
                 type="text"
                 name="city"
                 placeholder="Enter City..."
-                defaultValue={city} // Set the default value of the input to the city value
+                defaultValue={city} 
               />
               <button onClick={(e) => changeUnits(e)}>°F</button>
             </div>
